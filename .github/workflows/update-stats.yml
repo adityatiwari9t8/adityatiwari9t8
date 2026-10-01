@@ -1,0 +1,48 @@
+name: Update profile card stats
+
+on:
+  schedule:
+    # Daily; the "Uptime" line changes every day.
+    # Use "17 3 * * 1" for weekly if you prefer fewer commits.
+    - cron: "17 3 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update_stats.py"
+      - ".github/workflows/update-stats.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: update-profile-card
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    # Only run in the profile repo (<user>/<user>), never in forks.
+    if: github.repository == format('{0}/{0}', github.repository_owner)
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Refresh numbers in the SVG cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USER_NAME: ${{ github.repository_owner }}
+        run: python3 scripts/update_stats.py
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- dark_mode.svg light_mode.svg; then
+            echo "Cards unchanged, nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dark_mode.svg light_mode.svg
+          git commit -m "chore: refresh profile card stats"
+          git push
