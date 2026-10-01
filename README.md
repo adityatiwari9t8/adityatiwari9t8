@@ -1,16 +1,13 @@
-## Hi there 👋
+<a href="https://adityatiwari98.vercel.app/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="light_mode.svg" />
+    <img alt="adityatiwari9t8's GitHub profile" src="dark_mode.svg" />
+  </picture>
+</a>
 
-<!--
-**adityatiwari9t8/adityatiwari9t8** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Skills
+`TypeScript` `JavaScript` `Python` `Java` `C` `C++` `HTML` `CSS` · Data structures & algorithms
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Contact
+[Portfolio](https://adityatiwari98.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/adityatiwari9t8) · [adityatiwari.connect@gmail.com](mailto:adityatiwari.connect@gmail.com)
