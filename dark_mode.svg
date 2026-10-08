@@ -68,7 +68,7 @@ text, tspan {white-space: pre;}
 <text x="548" y="30" fill="#c9d1d9">
 <tspan x="548" y="30"><tspan>aditya@tiwari </tspan>————————————————————————————————————————————————</tspan>
 <tspan x="548" y="57"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> .................................. </tspan><tspan class="value">macOS, Windows, Linux</tspan></tspan>
-<tspan x="548" y="84"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots"> ......................... </tspan><tspan class="value" id="age_data">0 years, 8 months, 27 days</tspan></tspan>
+<tspan x="548" y="84"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots"> ......................... </tspan><tspan class="value" id="age_data">0 years, 8 months, 28 days</tspan></tspan>
 <tspan x="548" y="111"><tspan class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> .................................. </tspan><tspan class="value">VS Code, Antigravity</tspan></tspan>
 <tspan x="548" y="138"><tspan class="cc">. </tspan><tspan class="key">Focus</tspan>:<tspan class="cc"> ................................ </tspan><tspan class="value">Web Dev, DSA, AI, ML</tspan></tspan>
 <tspan x="548" y="165"><tspan class="cc">. </tspan></tspan>
